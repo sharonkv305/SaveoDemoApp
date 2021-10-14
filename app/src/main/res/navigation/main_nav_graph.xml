@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/popularMoviesFragment">
+
+    <fragment
+        android:id="@+id/popularMoviesFragment"
+        android:name="com.saveo.demo.ui.activity.PopularMoviesActivity"
+        android:label="fragment_popular_movies"
+        tools:layout="@layout/activity_popular_movies">
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.saveo.demo.ui.activity.MovieDetailsActivity"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/activity_movie_details" />
+</navigation>
